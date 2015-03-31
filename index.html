@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<title>Building a RESTful API with PHP</title>
+
+		<meta name="description" content="Define REST and teach how to build a simple API using PHP">
+		<meta name="author" content="Jacob M. Roufa">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="node_modules/reveal.js/css/reveal.css">
+		<link rel="stylesheet" href="node_modules/reveal.js/css/theme/moon.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="node_modules/reveal.js/lib/css/zenburn.css">
+
+    <style>
+      div.slides {
+        width: 100% !important;
+        max-width: 1920px;
+      }
+      section > :not(h1) {
+        display: inline-block;
+        margin: 0 auto;
+        width: 960px;
+      }
+      div.slideLinks {
+        line-height: 130%;
+      }
+      div.slideLinks a {
+        opacity: 0;
+      }
+      div.slideLinks:hover a {
+        opacity: 1;
+        cursor: pointer;
+      }
+      p.sub {
+        font-size: 80%;
+      }
+      div.formOverlay {
+        position: absolute;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(150,150,150,0.8);
+      }
+      div.formOverlay div.formTemplate {
+        margin: 100px auto 0;
+        width: 300px;
+        background: #fff;
+        font-size: 14px;
+        padding: 30px 50px;
+      }
+
+      .reveal section img {
+        max-height: 500px;
+      }
+    </style>
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="node_modules/reveal.js/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="node_modules/reveal.js/lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides"></div>
+
+		</div>
+
+    <div class="formOverlay" style="display:none;"></div>
+
+    <script type="text/template" id="editFormTemplate">
+      <div class="formTemplate">
+        <form class="editSlide">
+          <label for="first_title">First Title</label><input type="text" id="first_title" name="first_title" value="<%= first_title %>"/><br />
+          <label for="title">Title</label><input type="text" id="title" name="title" value="<%= title %>" /><br />
+          <label for="subtitle">Subtitle</label><input type="text" id="subtitle" name="subtitle" value="<%= subtitle %>" /><br />
+          <label for="body">Body</label><textarea id="body" name="body"><%= body %></textarea><br />
+          <label for="byline">Byline</label><input type="text" id="byline" name="byline" value="<%= byline %>" /><br />
+          <button name="submit" type="submit">Submit</button>
+          <button class="closeForm" name="cancel" type="button">Cancel</button>
+        </form>
+      </div>
+    </script>
+    
+    <script type="text/template" id="slideFormTemplate">
+      <% if ( first_title ) { %>
+        <h1><%= first_title %></h1>
+      <% } %>
+      <% if ( title ) { %>
+        <h2><%= title %></h2>
+      <% } %>
+      <% if ( subtitle ) { %>
+        <h3><%= subtitle %></h3>
+      <% } %>
+      <% if ( body ) { %>
+        <p class="body"><%= body %></p>
+      <% } %>
+      <% if ( byline ) { %>
+        <p class="sub"><%= byline %></p>
+      <% } %>
+    </script>
+
+    <script type="text/template" id="slideLinksTemplate">
+      <div class="slideLinks">
+        <a href="javascript:void(0);" class="editLink">edit this slide</a>
+        <br>
+        <a href="javascript:void(0);" class="deleteLink">delete this slide</a>
+        <br>
+        <a href="javascript:void(0);" class="addLink">add new slide</a>
+      </div>
+    </script>
+
+		<script src="node_modules/reveal.js/lib/js/head.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/reveal.js/js/reveal.js"></script>
+    <script src="node_modules/backbone/node_modules/underscore/underscore-min.js"></script>
+    <script src="node_modules/backbone/backbone-min.js"></script>
+    
+    <script src="script.js"></script>
+
+		<script>
+      restSlides.init();
+		</script>
+
+	</body>
+</html>
