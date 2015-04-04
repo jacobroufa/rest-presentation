@@ -88,10 +88,18 @@
         "title": "Uniform Interface"
     }, 
     {
-        "body": "Construct your resources such that they are representative of the way you want your user to manipulate them.", 
+        "body": "<img src=\"/rest-presentation/images/containers.jpg\" />", 
         "byline": "", 
         "first_title": "", 
         "id": "12", 
+        "subtitle": "", 
+        "title": ""
+    }, 
+    {
+        "body": "Construct your resources such that they are representative of the way you want your user to manipulate them.", 
+        "byline": "", 
+        "first_title": "", 
+        "id": "13", 
         "subtitle": "", 
         "title": "Resource Orientation"
     }, 
@@ -99,7 +107,7 @@
         "body": "Hypertext as the Engine of Application State", 
         "byline": "", 
         "first_title": "", 
-        "id": "13", 
+        "id": "14", 
         "subtitle": "", 
         "title": "HATEOAS"
     }, 
@@ -107,7 +115,7 @@
         "body": "", 
         "byline": "", 
         "first_title": "", 
-        "id": "14", 
+        "id": "15", 
         "subtitle": "", 
         "title": "JSON HAL and Hypermedia APIs"
     }, 
@@ -115,7 +123,7 @@
         "body": "The client cannot tell whether or not it is connected to the server or any intermediary (e.g. load balancer or shared cache).", 
         "byline": "", 
         "first_title": "", 
-        "id": "15", 
+        "id": "16", 
         "subtitle": "", 
         "title": "Layered System"
     }, 
@@ -123,7 +131,7 @@
         "body": "In a code-on-demand scenario, the client may be augmented dynamically via applets or extensions of the code delivered by the server.", 
         "byline": "", 
         "first_title": "", 
-        "id": "16", 
+        "id": "17", 
         "subtitle": "(optional)", 
         "title": "Code-on-Demand"
     }, 
@@ -131,7 +139,7 @@
         "body": "<img class=\"break\" src=\"/rest-presentation/images/break.gif\" />", 
         "byline": "", 
         "first_title": "", 
-        "id": "17", 
+        "id": "18", 
         "subtitle": "", 
         "title": ""
     }, 
@@ -139,7 +147,7 @@
         "body": "Now that we know of the constraints a RESTful API is built under, how can we implement this?", 
         "byline": "", 
         "first_title": "", 
-        "id": "18", 
+        "id": "19", 
         "subtitle": "", 
         "title": "Implementation"
     }, 
@@ -147,7 +155,7 @@
         "body": "GET, POST, PUT and DELETE are your friends!<br><br><img src=\"/rest-presentation/images/curl_get.png\" />", 
         "byline": "", 
         "first_title": "", 
-        "id": "19", 
+        "id": "20", 
         "subtitle": "", 
         "title": "HTTP Methods"
     }, 
@@ -155,7 +163,7 @@
         "body": "<img src=\"/rest-presentation/images/json.png\" /><br><a href=\"http://json.org\">JavaScript Object Notation</a> is an easy to parse and simple to construct data format.", 
         "byline": "", 
         "first_title": "", 
-        "id": "20", 
+        "id": "21", 
         "subtitle": "", 
         "title": "JSON as a Data Format"
     }, 
@@ -163,7 +171,7 @@
         "body": "Build URIs to make use of all available methods.<br><br>e.g. \"/slides\" is a resource that can be called with GET or POST to different effects", 
         "byline": "", 
         "first_title": "", 
-        "id": "21", 
+        "id": "22", 
         "subtitle": "", 
         "title": "Simple URI Construction"
     }, 
@@ -171,7 +179,7 @@
         "body": "<img src=\"/rest-presentation/images/yodawg_restful.jpg\" />", 
         "byline": "", 
         "first_title": "", 
-        "id": "22", 
+        "id": "23", 
         "subtitle": "", 
         "title": ""
     }, 
@@ -179,7 +187,7 @@
         "body": "The <a href=\"http://www.slimframework.com/\">Slim Framework</a> allows you to match routes to HTTP methods simply to serve your API.", 
         "byline": "", 
         "first_title": "", 
-        "id": "23", 
+        "id": "24", 
         "subtitle": "", 
         "title": "PHP and the Slim Framework"
     }, 
@@ -187,7 +195,7 @@
         "body": "<img src=\"/rest-presentation/images/slim_get.png\" />", 
         "byline": "", 
         "first_title": "", 
-        "id": "24", 
+        "id": "25", 
         "subtitle": "", 
         "title": "GET Method"
     }, 
@@ -195,7 +203,7 @@
         "body": "<img src=\"/rest-presentation/images/slim_post.png\" />", 
         "byline": "", 
         "first_title": "", 
-        "id": "25", 
+        "id": "26", 
         "subtitle": "", 
         "title": "POST Method"
     }, 
@@ -203,7 +211,7 @@
         "body": "<img src=\"/rest-presentation/images/slim_put.png\" />", 
         "byline": "", 
         "first_title": "", 
-        "id": "26", 
+        "id": "27", 
         "subtitle": "", 
         "title": "PUT Method"
     }, 
@@ -211,7 +219,7 @@
         "body": "<img src=\"/rest-presentation/images/slim_delete.png\" />", 
         "byline": "", 
         "first_title": "", 
-        "id": "27", 
+        "id": "28", 
         "subtitle": "", 
         "title": "DELETE Method"
     }, 
@@ -219,7 +227,7 @@
         "body": "<a href=\"http://backbonejs.org/\">Backbone.js</a> is a well thought out, powerful framework that allows easy API consumption and display with its Models, Collections and Views.", 
         "byline": "", 
         "first_title": "", 
-        "id": "28", 
+        "id": "29", 
         "subtitle": "", 
         "title": "Javascript and Backbone.js"
     }, 
@@ -227,7 +235,7 @@
         "body": "<img src=\"/rest-presentation/images/backbone_model.png\" />", 
         "byline": "", 
         "first_title": "", 
-        "id": "29", 
+        "id": "30", 
         "subtitle": "", 
         "title": "Model"
     }, 
@@ -235,7 +243,7 @@
         "body": "<img src=\"/rest-presentation/images/backbone_collection.png\" />", 
         "byline": "", 
         "first_title": "", 
-        "id": "30", 
+        "id": "31", 
         "subtitle": "", 
         "title": "Collection"
     }, 
@@ -243,7 +251,7 @@
         "body": "<img src=\"/rest-presentation/images/backbone_view.png\" />", 
         "byline": "", 
         "first_title": "", 
-        "id": "31", 
+        "id": "32", 
         "subtitle": "", 
         "title": "Views"
     }, 
@@ -251,7 +259,7 @@
         "body": "", 
         "byline": "", 
         "first_title": "", 
-        "id": "32", 
+        "id": "33", 
         "subtitle": "", 
         "title": "Questions?"
     }, 
@@ -259,7 +267,7 @@
         "body": "<ul><li><a href=\"https://github.com/jacobroufa/rest-presentation\">Presentation Framework and Slide Deck</a></li><li><a href=\"https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm\">Dr. Fielding's dissertation</a></li><li><a href=\"http://en.wikipedia.org/wiki/Representational_state_transfer\">Wikipedia's page on REST</a></li><li><a href=\"http://www.designinghypermediaapis.com/\">Designing Hypermedia APIs</a></li><li><a href=\"http://shop.oreilly.com/product/0636920020530.do\">Building Hypermedia APIs with HTML5 and Node (O'Reilly)</a></li><li><a href=\"http://stateless.co/hal_specification.html\">HAL - Hypertext Application Language</a></li></ul>", 
         "byline": "", 
         "first_title": "", 
-        "id": "33", 
+        "id": "34", 
         "subtitle": "", 
         "title": "Links"
     }
