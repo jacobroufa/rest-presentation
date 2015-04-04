@@ -1,0 +1,266 @@
+[
+    {
+        "body": "Jacob M. Roufa\r\n<br>\r\n<a href=\"http://twitter.com/jroufa\">@jroufa</a><br>\r\n<a href=\"mailto:jacob.roufa@gmail.com\">jacob.roufa@gmail.com</a>", 
+        "byline": "", 
+        "first_title": "Building and Consuming a RESTful API", 
+        "id": "1", 
+        "subtitle": "", 
+        "title": "\u00a0"
+    }, 
+    {
+        "body": "<img src=\"/rest-presentation/images/family.jpg\" />", 
+        "byline": "", 
+        "first_title": "", 
+        "id": "2", 
+        "subtitle": "", 
+        "title": "Who am I?"
+    }, 
+    {
+        "body": "As most commonly implemented, a RESTful API is a predictable and useful way to transmit data from a server to any number of clients using HTTP.", 
+        "byline": "", 
+        "first_title": "", 
+        "id": "3", 
+        "subtitle": "", 
+        "title": "What's a RESTful API?"
+    }, 
+    {
+        "body": "The RESTful convention is used throughout the internet to provide data that powers many of our daily interactions.", 
+        "byline": "", 
+        "first_title": "", 
+        "id": "4", 
+        "subtitle": "", 
+        "title": "Why should I care?"
+    }, 
+    {
+        "body": "Representational state transfer (REST) is an architectural style consisting of a coordinated set of constraints applied to components, connectors, and data elements, within a distributed hypermedia system.", 
+        "byline": "(According to Wikipedia's article on REST)", 
+        "first_title": "", 
+        "id": "5", 
+        "subtitle": "", 
+        "title": "What is REST?"
+    }, 
+    {
+        "body": "", 
+        "byline": "", 
+        "first_title": "", 
+        "id": "6", 
+        "subtitle": "", 
+        "title": "What are these constraints?"
+    }, 
+    {
+        "body": "The client does not know how the server stores its data and the server does not care how the client presents it.", 
+        "byline": "", 
+        "first_title": "", 
+        "id": "7", 
+        "subtitle": "", 
+        "title": "Client-server"
+    }, 
+    {
+        "body": "Every request stands on its own and contains all the necessary information to complete the request.", 
+        "byline": "", 
+        "first_title": "", 
+        "id": "8", 
+        "subtitle": "", 
+        "title": "Stateless"
+    }, 
+    {
+        "body": "Given the same input, one should expect the same result.", 
+        "byline": "", 
+        "first_title": "", 
+        "id": "9", 
+        "subtitle": "", 
+        "title": "Idempotence"
+    }, 
+    {
+        "body": "The server must define the ability to cache, or not, where applicable.", 
+        "byline": "", 
+        "first_title": "", 
+        "id": "10", 
+        "subtitle": "", 
+        "title": "Cacheable"
+    }, 
+    {
+        "body": "The data interface must be general enough that many clients could use it.", 
+        "byline": "", 
+        "first_title": "", 
+        "id": "11", 
+        "subtitle": "", 
+        "title": "Uniform Interface"
+    }, 
+    {
+        "body": "Construct your resources such that they are representative of the way you want your user to manipulate them.", 
+        "byline": "", 
+        "first_title": "", 
+        "id": "12", 
+        "subtitle": "", 
+        "title": "Resource Orientation"
+    }, 
+    {
+        "body": "Hypertext as the Engine of Application State", 
+        "byline": "", 
+        "first_title": "", 
+        "id": "13", 
+        "subtitle": "", 
+        "title": "HATEOAS"
+    }, 
+    {
+        "body": "", 
+        "byline": "", 
+        "first_title": "", 
+        "id": "14", 
+        "subtitle": "", 
+        "title": "JSON HAL and Hypermedia APIs"
+    }, 
+    {
+        "body": "The client cannot tell whether or not it is connected to the server or any intermediary (e.g. load balancer or shared cache).", 
+        "byline": "", 
+        "first_title": "", 
+        "id": "15", 
+        "subtitle": "", 
+        "title": "Layered System"
+    }, 
+    {
+        "body": "In a code-on-demand scenario, the client may be augmented dynamically via applets or extensions of the code delivered by the server.", 
+        "byline": "", 
+        "first_title": "", 
+        "id": "16", 
+        "subtitle": "(optional)", 
+        "title": "Code-on-Demand"
+    }, 
+    {
+        "body": "<img class=\"break\" src=\"/rest-presentation/images/break.gif\" />", 
+        "byline": "", 
+        "first_title": "", 
+        "id": "17", 
+        "subtitle": "", 
+        "title": ""
+    }, 
+    {
+        "body": "Now that we know of the constraints a RESTful API is built under, how can we implement this?", 
+        "byline": "", 
+        "first_title": "", 
+        "id": "18", 
+        "subtitle": "", 
+        "title": "Implementation"
+    }, 
+    {
+        "body": "GET, POST, PUT and DELETE are your friends!<br><br><img src=\"/rest-presentation/images/curl_get.png\" />", 
+        "byline": "", 
+        "first_title": "", 
+        "id": "19", 
+        "subtitle": "", 
+        "title": "HTTP Methods"
+    }, 
+    {
+        "body": "<img src=\"/rest-presentation/images/json.png\" /><br><a href=\"http://json.org\">JavaScript Object Notation</a> is an easy to parse and simple to construct data format.", 
+        "byline": "", 
+        "first_title": "", 
+        "id": "20", 
+        "subtitle": "", 
+        "title": "JSON as a Data Format"
+    }, 
+    {
+        "body": "Build URIs to make use of all available methods.<br><br>e.g. \"/slides\" is a resource that can be called with GET or POST to different effects", 
+        "byline": "", 
+        "first_title": "", 
+        "id": "21", 
+        "subtitle": "", 
+        "title": "Simple URI Construction"
+    }, 
+    {
+        "body": "<img src=\"/rest-presentation/images/yodawg_restful.jpg\" />", 
+        "byline": "", 
+        "first_title": "", 
+        "id": "22", 
+        "subtitle": "", 
+        "title": ""
+    }, 
+    {
+        "body": "The <a href=\"http://www.slimframework.com/\">Slim Framework</a> allows you to match routes to HTTP methods simply to serve your API.", 
+        "byline": "", 
+        "first_title": "", 
+        "id": "23", 
+        "subtitle": "", 
+        "title": "PHP and the Slim Framework"
+    }, 
+    {
+        "body": "<img src=\"/rest-presentation/images/slim_get.png\" />", 
+        "byline": "", 
+        "first_title": "", 
+        "id": "24", 
+        "subtitle": "", 
+        "title": "GET Method"
+    }, 
+    {
+        "body": "<img src=\"/rest-presentation/images/slim_post.png\" />", 
+        "byline": "", 
+        "first_title": "", 
+        "id": "25", 
+        "subtitle": "", 
+        "title": "POST Method"
+    }, 
+    {
+        "body": "<img src=\"/rest-presentation/images/slim_put.png\" />", 
+        "byline": "", 
+        "first_title": "", 
+        "id": "26", 
+        "subtitle": "", 
+        "title": "PUT Method"
+    }, 
+    {
+        "body": "<img src=\"/rest-presentation/images/slim_delete.png\" />", 
+        "byline": "", 
+        "first_title": "", 
+        "id": "27", 
+        "subtitle": "", 
+        "title": "DELETE Method"
+    }, 
+    {
+        "body": "<a href=\"http://backbonejs.org/\">Backbone.js</a> is a well thought out, powerful framework that allows easy API consumption and display with its Models, Collections and Views.", 
+        "byline": "", 
+        "first_title": "", 
+        "id": "28", 
+        "subtitle": "", 
+        "title": "Javascript and Backbone.js"
+    }, 
+    {
+        "body": "<img src=\"/rest-presentation/images/backbone_model.png\" />", 
+        "byline": "", 
+        "first_title": "", 
+        "id": "29", 
+        "subtitle": "", 
+        "title": "Model"
+    }, 
+    {
+        "body": "<img src=\"/rest-presentation/images/backbone_collection.png\" />", 
+        "byline": "", 
+        "first_title": "", 
+        "id": "30", 
+        "subtitle": "", 
+        "title": "Collection"
+    }, 
+    {
+        "body": "<img src=\"/rest-presentation/images/backbone_view.png\" />", 
+        "byline": "", 
+        "first_title": "", 
+        "id": "31", 
+        "subtitle": "", 
+        "title": "Views"
+    }, 
+    {
+        "body": "", 
+        "byline": "", 
+        "first_title": "", 
+        "id": "32", 
+        "subtitle": "", 
+        "title": "Questions?"
+    }, 
+    {
+        "body": "<ul><li><a href=\"https://github.com/jacobroufa/rest-presentation\">Presentation Framework and Slide Deck</a></li><li><a href=\"https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm\">Dr. Fielding's dissertation</a></li><li><a href=\"http://en.wikipedia.org/wiki/Representational_state_transfer\">Wikipedia's page on REST</a></li><li><a href=\"http://www.designinghypermediaapis.com/\">Designing Hypermedia APIs</a></li><li><a href=\"http://shop.oreilly.com/product/0636920020530.do\">Building Hypermedia APIs with HTML5 and Node (O'Reilly)</a></li><li><a href=\"http://stateless.co/hal_specification.html\">HAL - Hypertext Application Language</a></li></ul>", 
+        "byline": "", 
+        "first_title": "", 
+        "id": "33", 
+        "subtitle": "", 
+        "title": "Links"
+    }
+]
