@@ -152,11 +152,11 @@
         "title": "Implementation"
     }, 
     {
-        "body": "GET, POST, PUT and DELETE are your friends!<br><br><img src=\"/rest-presentation/images/curl_get.png\" />", 
+        "body": "Create == POST<br>Read == GET<br>Update == PUT<br>Delete == DELETE<br><br><img src=\"/rest-presentation/images/curl_get.png\" />", 
         "byline": "", 
         "first_title": "", 
         "id": "20", 
-        "subtitle": "", 
+        "subtitle": "GET, POST, PUT and DELETE are your friends!", 
         "title": "HTTP Methods"
     }, 
     {
@@ -240,10 +240,26 @@
         "title": "Model"
     }, 
     {
-        "body": "<img src=\"/rest-presentation/images/backbone_collection.png\" />", 
+        "body": "The client does not know how the server stores its data and the server does not care how the client presents it.", 
         "byline": "", 
         "first_title": "", 
         "id": "31", 
+        "subtitle": "", 
+        "title": "Client-server"
+    }, 
+    {
+        "body": "<img src=\"/rest-presentation/images/backbone_model.png\" />", 
+        "byline": "", 
+        "first_title": "", 
+        "id": "32", 
+        "subtitle": "", 
+        "title": "Model"
+    }, 
+    {
+        "body": "<img src=\"/rest-presentation/images/backbone_collection.png\" />", 
+        "byline": "", 
+        "first_title": "", 
+        "id": "33", 
         "subtitle": "", 
         "title": "Collection"
     }, 
@@ -251,7 +267,7 @@
         "body": "<img src=\"/rest-presentation/images/backbone_view.png\" />", 
         "byline": "", 
         "first_title": "", 
-        "id": "32", 
+        "id": "34", 
         "subtitle": "", 
         "title": "Views"
     }, 
@@ -259,7 +275,7 @@
         "body": "", 
         "byline": "", 
         "first_title": "", 
-        "id": "33", 
+        "id": "35", 
         "subtitle": "", 
         "title": "Questions?"
     }, 
@@ -267,7 +283,7 @@
         "body": "<ul><li><a href=\"https://github.com/jacobroufa/rest-presentation\">Presentation Framework and Slide Deck</a></li><li><a href=\"https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm\">Dr. Fielding's dissertation</a></li><li><a href=\"http://en.wikipedia.org/wiki/Representational_state_transfer\">Wikipedia's page on REST</a></li><li><a href=\"http://www.designinghypermediaapis.com/\">Designing Hypermedia APIs</a></li><li><a href=\"http://shop.oreilly.com/product/0636920020530.do\">Building Hypermedia APIs with HTML5 and Node (O'Reilly)</a></li><li><a href=\"http://stateless.co/hal_specification.html\">HAL - Hypertext Application Language</a></li></ul>", 
         "byline": "", 
         "first_title": "", 
-        "id": "34", 
+        "id": "36", 
         "subtitle": "", 
         "title": "Links"
     }
